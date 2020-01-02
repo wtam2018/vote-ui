@@ -14,7 +14,6 @@ hostname = socket.gethostname()
 
 app = Flask(__name__)
 
-
 @app.route("/", methods=['POST','GET'])
 def hello():
     rest_endpoint="http://" + os.environ["VOTING_API_SERVICE_HOST"] + ":" + os.environ["VOTING_API_SERVICE_PORT"]
